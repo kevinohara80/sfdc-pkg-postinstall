@@ -1,0 +1,21 @@
+{
+  "name": "sfdc-pkg-postinstall",
+  "version": "1.0.0",
+  "description": "Post-install script for salesforce packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "salesforce",
+    "sfdc",
+    "sfdc-pkg",
+    "apex",
+    "visualforce",
+    "lightning"
+  ],
+  "author": "Kevin O'Hara",
+  "license": "MIT",
+  "dependencies": {}
+}
