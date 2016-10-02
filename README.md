@@ -1,6 +1,6 @@
 # sfdc package postinstall
 
-This is a postinstall script to be included in you Salesforce packages 
+This is a postinstall script to be included in your Salesforce packages 
 that you want to publish on npm.
 
 ## Getting Started
