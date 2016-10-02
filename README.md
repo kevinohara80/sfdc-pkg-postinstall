@@ -49,6 +49,22 @@ in that project for a full working example.
 directory and your subsequent folder structure should match what's returned
 from the metadata api. For example, Apex Classes should be in `/src/classes`.
 
+# What Packages can I `npm install`?
+
+I'm asking that packages that support this script add the keyword
+`sfdc-package` to the `package.json` keywords array. Therefore,
+You can search for packages by visiting:
+
+[SFDC Packages on npmjs.com](https://www.npmjs.com/search?q=sfdc-package)
+
+Or from the command line:
+
+```bash
+$ npm search sfdc-package
+```
+
+If this becomes more popular, I'll build a website for this.
+
 ## Important Notes
 
 * __THIS IS AN EXPERIMENTAL PROJECT__ - use at your own discretion. Also,
@@ -60,10 +76,21 @@ know what you're doing.
 Therefore, __name collisions on metadata files can occurr__. For example, 
 you may have an Apex class called `MyClass.cls`. If you `npm install` 
 a salesforce package that also has a class called `MyClass.cls`,
-it will overwrite yours. 
+it will overwrite yours.
+* It might make the install easier on your users if you manually namespace
+your code to reduce the chances of name collisions. For example, consider
+naming your apex class "mypkg_MyClass.cls" versus "MyClass.cls". It's ugly,
+I know, but if this becomes popular, this is going to be necessary...at least
+for now. I have some other ideas.
 * This does not deploy any code upon install. It simply merges the code
 into your projects `src` dir. You can use something like
 [dmc](https://github.com/kevinohara80/dmc) to deploy your code or other
 common IDE's and tools like MavensMate.
 
+## Help Me
 
+This could be a terrible idea. It could also be great if some of the kinks
+get worked out. I have some ideas on how to make this work well even without
+the ability to namespace/import but I want to hear your ideas as well. Feel
+free to log an issue with a feature request and/or send me a PR for any 
+enhancements.
