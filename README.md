@@ -55,7 +55,7 @@ I'm asking that packages that support this script add the keyword
 `sfdc-package` to the `package.json` keywords array. Therefore,
 You can search for packages by visiting:
 
-[SFDC Packages on npmjs.com](https://www.npmjs.com/search?q=sfdc-package)
+[SFDC Packages on npmjs.com](https://www.npmjs.com/browse/keyword/sfdc-package)
 
 Or from the command line:
 
