@@ -1,5 +1,7 @@
 # sfdc package postinstall
 
+[![npm version](https://badge.fury.io/js/sfdc-pkg-postinstall.svg)](https://badge.fury.io/js/sfdc-pkg-postinstall)
+
 This is a postinstall script to be included in your Salesforce packages 
 that you want to publish on npm.
 
